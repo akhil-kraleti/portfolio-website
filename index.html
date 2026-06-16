@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive portfolio website Akhil Tej Sarma Kraleti - Bedimcode</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Akhil Tej Sarma Kraleti</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">Hello, I'm</h3>
+                    <h1 class="home__title">Akhil Tej Sarma Kraleti</h1>
+                    <h2 class="home__profession">Data Analyst</h2>
+                    <p class="home__description">
+                        Motivated Computer Science undergraduate with a strong foundation in programming, data analytics, machine learning, and problem-solving. Seeking an opportunity to apply technical and analytical skills to solve real-world business challenges, develop data-driven solutions, and contribute to organizational success. Eager to learn, collaborate with diverse teams, and continuously enhance my expertise in technology and innovation. 
+                    </p>
+
+                    <div class="home__social">
+                        <a href="http://linkedin.com/in/akhil-kraleti" target="_blank" class="home__social-link" aria-label="LinkedIn">
+                            <img src="linkedin.svg" alt="LinkedIn logo" class="home__social-icon">
+                        </a>
+                        <a href="https://github.com/akhil-kraleti" target="_blank" class="home__social-link" aria-label="GitHub">
+                            <img src="github.svg" alt="GitHub logo" class="home__social-icon">
+                        </a>
+                        <a href="https://leetcode.com/u/Akhilkraleti/" target="_blank" class="home__social-link home__social-link--leetcode" aria-label="LeetCode">
+                            <img src="leetcode.svg" alt="LeetCode logo" class="home__social-icon">
+                        </a>
+                    </div>
+
+                    <div class="home__buttons">
+                        <a href="assets/pdf/Akhil_Tej_Sarma_Kraleti_resume.pdf" download="Akhil_Tej_Sarma_Kraleti_resume.pdf" class="button">Download My Resume</a>
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__circle"></div>
+                    <img src="assets/img/home-perfil.png" alt="home image" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <div class="about__data">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="about__description">
+                        Experienced Data Science and AI enthusiast with a proven track record of 5+ successfully completed projects.<br> My expertise bridges the gap between raw data and business value through practical implementations of <br>machine learning models, predictive analytics, natural language processing, and interactive data visualizations.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <h3 class="about__info-title">1+</h3>
+                            <p class="about__info-description">Years of <br> experience</p>
+                        </div>
+                        <div>
+                            <h3 class="about__info-title">5+</h3>
+                            <p class="about__info-description">Completed <br> projects</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="about__skills">
+                        <h3 class="about__skills-title">Technical Skills</h3>
+                        <div class="about__skills-list">
+                            <span class="about__skill-button">Python</span>
+                            <span class="about__skill-button">NumPy</span>
+                            <span class="about__skill-button">Pandas</span>
+                            <span class="about__skill-button">Matplotlib</span>
+                            <span class="about__skill-button">Seaborn</span>
+                            <span class="about__skill-button">Scikit-learn</span>
+                            <span class="about__skill-button">Java</span>
+                            <span class="about__skill-button">SQL</span>
+                            <span class="about__skill-button">Data Structures</span>
+                            <span class="about__skill-button">Algorithms</span>
+                            <span class="about__skill-button">OOPs</span>
+                            <span class="about__skill-button">Competitive Programming</span>
+                            <span class="about__skill-button">Linear Regression</span>
+                            <span class="about__skill-button">Multiple Linear Regression</span>
+                            <span class="about__skill-button">Random Forest</span>
+                            <span class="about__skill-button">Decision Tree</span>
+                            <span class="about__skill-button">Logistic Regression</span>
+                            <span class="about__skill-button">MySQL</span>
+                            <span class="about__skill-button">Power BI</span>
+                            <span class="about__skill-button">Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Recent Projects</h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <img src="assets/img/proj1.png" alt="project image" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Web App</span>
+                            <h3 class="projects__title">AI Resume Analyzer</h3>
+                            <a href="#" class="projects__button">
+                         
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/proj2.png" alt="project image" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">ML Model</span>
+                            <h3 class="projects__title">Spam Mail Detection</h3>
+                            <a href="#" class="projects__button">
+                           
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/proj3.png" alt="project image" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Dashboard</span>
+                            <h3 class="projects__title">HR Data Analytics Dashboard</h3>
+                            <a href="#" class="projects__button">
+                           
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/proj4.png" alt="project image" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">ML Model</span>
+                            <h3 class="projects__title">Iris Flower Classification with Desision Tree</h3>
+                            <a href="#" class="projects__button">
+                           
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/proj5.png" alt="project image" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">ML Model</span>
+                            <h3 class="projects__title">E-Commerce Customer Spending Prediction</h3>
+                            <a href="#" class="projects__button">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                    </div>
+                    
+                    <textarea name="user_project" placeholder="Project" required class="contact__input contact__area"></textarea>
+                    
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <button type="submit" class="button contact__button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Akhil Tej Sarma Kraleti</h2>
+                <p class="footer__description">Data Analyst</p>
+            </div>
+
+            <ul class="footer__links">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="http://linkedin.com/in/akhil-kraleti" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                    <img src="linkedin.svg" alt="LinkedIn logo" class="footer__social-icon">
+                </a>
+                <a href="https://github.com/akhil-kraleti" target="_blank" class="footer__social-link" aria-label="GitHub">
+                    <img src="github.svg" alt="GitHub logo" class="footer__social-icon">
+                </a>
+                <a href="https://leetcode.com/u/Akhilkraleti/" target="_blank" class="footer__social-link" aria-label="LeetCode">
+                    <img src="leetcode.svg" alt="LeetCode logo" class="footer__social-icon">
+                </a>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#151; All rights reserved</span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+    <script type="text/javascript" src="assets/js/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script type="text/javascript">
+        (function initEmailJs(){
+            const PUBLIC_KEY = '-wdemEg7UV1_ZiS4i';
+            let retries = 0;
+            const maxRetries = 50; // ~5 seconds
+
+            function tryInit(){
+                const sdk = window['emailjs'];
+                if (sdk && typeof sdk.init === 'function'){
+                    sdk.init(PUBLIC_KEY);
+                    console.log('EmailJS initialized');
+                    return;
+                }
+
+                retries += 1;
+                if (retries <= maxRetries) {
+                    setTimeout(tryInit, 100);
+                } else {
+                    console.error('EmailJS failed to load after retries');
+                }
+            }
+
+            tryInit();
+        })();
+    </script>
+
+    <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>
