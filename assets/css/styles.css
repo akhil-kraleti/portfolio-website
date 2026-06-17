@@ -311,17 +311,20 @@ img {
 .home__circle {
   width: 260px;
   height: 260px;
-  background-color: var(--black-color);
+  background-color: transparent;
   border-radius: 50%;
+  border: 8px solid var(--black-color);
 }
 
 .home__img {
-  width: 250px;
+  width: 220px;
+  height: 220px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*=============== ABOUT ===============*/
@@ -768,12 +771,18 @@ img {
   .home__circle {
     width: 300px;
     height: 300px;
+    background-color: transparent;
+    border: 8px solid var(--black-color);
   }
   .home__img {
-    width: 430px;
-    left: 0;
-    right: auto;
-    margin: 0;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .about__container {
