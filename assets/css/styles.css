@@ -761,3 +761,20 @@ img {
     right: 3rem;
   }
 }
+
+/* Stack home buttons on small and medium screens to avoid overlap */
+@media screen and (max-width: 768px) {
+  .home__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: center;
+  }
+
+  .home__buttons .button {
+    width: 80%;
+    max-width: 360px;
+    padding: .75rem 1rem;
+    text-align: center;
+  }
+}
