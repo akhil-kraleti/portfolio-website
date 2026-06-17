@@ -646,6 +646,51 @@ img {
   }
 }
 
+/* Mobile (small) devices: ensure home image is visible and sized down */
+@media screen and (max-width: 575px) {
+  .home__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .home__images {
+    order: 1;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    position: relative; /* avoid absolute positioning clipping */
+  }
+
+  .home__data {
+    order: 2;
+  }
+
+  .home__circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home__img {
+    position: relative;
+    width: 130px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+  }
+
+  .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__description {
+    font-size: 0.95rem;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container,
