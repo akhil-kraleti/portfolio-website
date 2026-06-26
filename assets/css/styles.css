@@ -308,12 +308,7 @@ img {
   justify-self: start;
 }
 
-.home__circle {
-  width: 260px;
-  height: 260px;
-  background-color: var(--black-color);
-  border-radius: 50%;
-}
+
 
 .home__img {
   width: 250px;
@@ -322,6 +317,8 @@ img {
   left: 0;
   right: 0;
   margin: 0 auto;
+  border-radius: 50%;
+  border: 8px solid var(--black-color);
 }
 
 /*=============== ABOUT ===============*/
