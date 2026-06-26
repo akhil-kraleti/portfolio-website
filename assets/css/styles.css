@@ -266,7 +266,10 @@ img {
 
 .home__description {
   margin-bottom: 2.5rem;
-  font-size:20px;
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
 }
 
 .home__social {
@@ -346,6 +349,7 @@ img {
   max-height: 300px;
   overflow:auto;
   font-size: var(--h4-font-size);
+  margin: 0 0 1.5rem;
 }
 
 .about__skills {
@@ -441,10 +445,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.about__info > div {
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  min-width: 180px;
+  margin: 0.55rem 0.35rem 0.35rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
 }
 
 .about__info-title {
@@ -705,10 +718,59 @@ img {
   .container {
     margin-inline: 1rem;
   }
-  
+}
+
+@media screen and (max-width: 640px) {
   .about__info {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .about__info > div {
+    min-width: 0;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+  .home__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .home__images {
+    order: 1;
+    justify-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .home__data {
+    order: 2;
+    text-align: center;
+  }
+
+  .home__title {
+    font-size: 30px;
+  }
+
+  .home__social {
+    justify-content: center;
+  }
+
+  .home__buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home__img {
+    position: relative;
+    width: 220px;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
   }
 }
 
