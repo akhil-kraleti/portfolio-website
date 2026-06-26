@@ -172,6 +172,12 @@ img {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .about__skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -335,6 +341,10 @@ img {
 
 .about__description {
   text-align: center;
+  max-width: 1400px;
+  min-width: 300px;
+  max-height: 300px;
+  overflow:auto;
   font-size: var(--h4-font-size);
 }
 
@@ -350,22 +360,81 @@ img {
 }
 
 .about__skills-list {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+.about__skill-group {
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+}
+
+.about__skill-summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: var(--font-semibold);
+  color: var(--black-color);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__skill-summary::-webkit-details-marker {
+  display: none;
+}
+
+.about__skill-summary::after {
+  content: '+';
+  color: var(--first-color);
+  font-size: 1.1rem;
+}
+
+.about__skill-group[open] .about__skill-summary::after {
+  content: '−';
+}
+
+.about__skill-group-content {
+  margin-top: .9rem;
+  display: grid;
   gap: .75rem;
 }
 
-.about__skill-button {
-  display: inline-flex;
+.about__skill-item {
+  background-color: #f7f7f7;
+  border-radius: .65rem;
+  padding: .8rem .9rem;
+}
+
+.about__skill-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: .65rem 1rem;
-  border-radius: .75rem;
-  background-color: var(--black-color);
-  color: var(--white-color);
+  margin-bottom: .5rem;
+  font-weight: var(--font-semibold);
+  color: var(--black-color);
+}
+
+.about__skill-percent {
+  color: var(--first-color);
   font-size: var(--smaller-font-size);
-  cursor: default;
+}
+
+.about__skill-bar {
+  width: 100%;
+  height: .5rem;
+  background-color: #e6e6e6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.about__skill-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1f6feb, #4aa3ff);
 }
 
 .about__info {
@@ -448,7 +517,7 @@ img {
 
 .projects__subtitle {
   font-size: var(--smaller-font-size);
-  color: var(--first-color);
+  color: white;
 }
 
 .projects__title {
